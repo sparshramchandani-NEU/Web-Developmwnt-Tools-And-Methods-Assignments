@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./WaiverForm.css">
+    <title>Waiver Form</title>
+</head>
+<body>
+    
+        <header class="header">
+            <img class="logo-img" src="./logo.png" alt="">
+            <div>
+
+                <h2 class="titletxt"> Northeastern University</h2>
+                <h3 class="hrtxt"> Human Resources</h3>
+            </div>
+            <p class="desc">Tuition Fee Waiver Form</p>
+        </header>
+        <p class="desc-txt">This form is used by part-time faculty, part-time staff, retirees, their spouses or domestic partners and their dependents.
+            All full-time faculty and staff should use the online Tuition Waiver Form found on myNEU. Before completing this form,
+            please refer to the Tuition Waiver Program Guidelines. Be sure to include a Dependent Certification Form along with
+            the submission of this form for any dependent children.</p>
+
+
+    
+    <form action="./WaiverForm" method="post" >
+        <!-- Section 1  -->
+        <div class="section1container">
+            <h3 class="section1header" >Section1</h3>
+            <div class="section1">
+
+                <div style="display: flex;">
+                    <p class="academicTerm">Academic Term: </p>
+                    <input type="text" name="AcademicTerm" id="AcademicTerm" placeholder="" class="inputAcademicTerm" >
+                </div>
+
+                <div style="display: flex;">
+                    <p class="academicYear">Academic Year: </p>
+                    <input type="text" name="AcademicYear" id="AcademicYear" placeholder="" class="inputAcademicYear" >
+                </div>
+
+                <div style="display:flex">
+                    <p class="employeeStatus">Employee Status: </p>
+                    <input type="radio" name="EmployeeStatus" id="EmployeeStatus" value="P/T Staff" class="inputEmployeeStatus" >    
+                    <p>P/T Staff</p>
+                    <input type="radio" name="EmployeeStatus" value="P/T Faculty">
+                    <p>P/T Faculty</p>                   
+                </div>        
+            </div>
+
+            <div style="display:flex;">
+                <div>
+                    <p style="margin: 0px;">(Fall, Winter, Spring, or Summer)*</p>
+                </div>
+                <div style="display: flex; margin-top: -15px; padding-top:0px; padding-left: 50em;">
+                    <input type="radio" name="Employeestatus" value="Retiree">
+                    <p>Retiree</p>
+                    <input type="radio" name="Employeestatus"  >
+                    <p>Other</p>
+                    <input type="text" name="employeeStatusOthers" class="Others" >
+                </div>
+            </div>
+            <p class="terms">*Terms with multiple sessions are considered one academic term for tuition waiver purposes e.g., summer sessions I and
+                II are considered one academic term.</p>
+        </div>
+
+        <!-- Section 2  -->
+        <div class="section2container">
+            <h3 class="section2header">Section 2</h3>
+            <div class="section2">
+                <div style="display: flex; justify-content: space-between;" >
+                    <div style="display: flex; width: 90%;">
+                        <input type="text" name="inputstudentName" class="inputstudentName">
+                        <input type="text" name="inputemployeeRelationship" class="inputemployeeRelationship">
+                    </div>
+                    <input type="text" name="inputstudentsNUId" class="inputstudentsNUId">
+                </div>
+                <div style="display: flex;" >
+                    <p class="studentName">Student’s Name</p>
+                    <p class="employeeRelationship">Relationship to Employee</p>
+                    <p class="studentsNUId">Student’s NUID</p>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-top: 20px;" >
+                    <div style="display: flex; width: 90%;">
+                        <input type="text" name="inputemployeeName" class="inputemployeeName">
+                    </div>
+                    <input type="text" name="inputemployeeNUId" class="inputstudentsNUId">
+                </div>
+                <div style="display: flex;" >
+                    <p class="employeeName">Employee’s Name (if different from Student’s)</p>
+                    <p class="employeeNUId">Employee’s NUID</p>
+                </div>
+                <div style="display: flex;">
+                    <div style="display: flex; width: 63%; justify-content: space-between; padding-right: 20em; margin-top: 20px;" >
+                        <input type="text" name="inputdepartment" class="inputdepartment">
+                        <input type="text" name="inputcampusLocation" class="inputcampusLocation">
+                        <input type="text" name="inputphoneNumber" class="inputphoneNumber">
+                    </div>
+                    <input type="text" name="supervisorName" class="inputstudentsNUId" style="height: 10px; padding-top: 3vh;">
+                </div>
+                <div style="display: flex;margin: 0px;">
+                    <div style="display: flex; width: 58%; padding-right:20em ; justify-content: space-between;">
+                        <p class="department">Department</p>
+                        <p class="campusLoation">Campus Location</p>
+                        <p class="phoneNumber">Phone Number</p>
+                    </div>
+                    <p class="supervisorName">Supervisor’s Name</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3  -->
+        <div class="section3container">
+            <div class="section3headerc">
+                <h3 class="section3header">Section 3</h3>
+                <p class="section3desc">Indicate the applicable school or program: </p>
+            </div>
+            <div style="display: flex; margin: 0;">
+                <input type="checkbox" value="Undergraduate Program" name="Program">
+                <p style="margin: 0.5px;">Undergraduate Program</p>
+                <input type="checkbox" value="Law School (excludes employees)" name="Program">
+                <p style="margin: 0.5px;">Law School (excludes employees)</p>
+                <input type="checkbox"  value="Doctoral Candidate" name="Program">
+                <p style="margin: 0.5px;"> Doctoral Candidate</p>
+            </div>
+            <div style="display: flex; margin: 0;">
+                <input type="checkbox" value="College of Professional Studies (CPS) Undergraduate" name="Program">
+                <p style="margin: 0.5px;">College of Professional Studies (CPS) Undergraduate</p>
+                <input type="checkbox" value="Graduate School" name="Program">
+                <p style="margin: 0.5px;">Graduate School</p>
+                <input type="checkbox" value="CPS Graduate School" name="Program">
+                <p style="margin: 0.5px;"> CPS Graduate School</p>
+            </div>
+            <div>
+                <p class="desc1">One course per academic term may be taken one-half hour before the end of your workday. If this applies to you, this
+                    form must be signed by your supervisor below and approved by Human Resources Management. </p>
+                    <pc class="desc2"> Complete the following course information. If you are an employee taking a job related course, please attach the Job
+                        Related Designation Form to this waiver</pc>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+                <p>Course No.</p>
+                <p>Course Name</p>
+                <p>Supervisor Signature</p>
+                <p>Credit Hrs.</p>
+                <p>Day(s)</p>
+                <p style="padding-right: 10%;">Time</p>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+                <input class="section3input1" type="text" name="inputcourseNo1">
+                <input class="section3input1" type="text" name="inputcourseName1">
+                <input class="section3input1" type="text" name="inputsupervisorSignature1">
+                <input class="section3input1" type="text" name="inputcreditHrs1">
+                <input class="section3input1" type="text" name="inputdays1">
+                <div style="display: flex;">                    
+                    <input class="section3input1" type="text" name="time1">
+                    <p style="margin: 0px;">am/pm</p>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+                <input class="section3input1" type="text" name="inputcourseNo2">
+                <input class="section3input1" type="text" name="inputcourseName2">
+                <input class="section3input1" type="text" name="inputsupervisorSignature2">
+                <input class="section3input1" type="text" name="inputcreditHrs2">
+                <input class="section3input1" type="text" name="inputdays2">
+                <div style="display: flex;">                    
+                    <input class="section3input1" type="text" name="time2">
+                    <p style="margin: 0px;">am/pm</p>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+                <input class="section3input1" type="text" name="inputcourseNo3">
+                <input class="section3input1" type="text" name="inputcourseName3">
+                <input class="section3input1" type="text" name="inputsupervisorSignature3">
+                <input class="section3input1" type="text" name="inputcreditHrs3">
+                <input class="section3input1" type="text" name="inputdays3">
+                <div style="display: flex;">                    
+                    <input class="section3input1" type="text" name="time3">
+                    <p style="margin: 0px;">am/pm</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="section4">
+            <h3 class="section4header">Section 4</h3>
+            <p>In accordance with Northeastern University's Tuition Waiver Program Guidelines, my signature attests that I am
+                currently enrolled in the above courses, or that the student listed above is my spouse, domestic partner or
+                unmarried dependent child or the dependent child of my domestic partner as defined under current IRS tax
+                regulations. I also certify that I have read the Tuition Waiver Program Guidelines. </p>
+            <div style="display: flex; width: 80%; justify-content: space-between;">
+                <input type="text" name="employeeSignature" style="width: 60%;">
+                <input type="text" name="date1">
+            </div>
+            <div style="display: flex; width: 80%; justify-content: space-between;" >
+                <p style="width: 40%; margin: 0px; ">Employee’s Signature </p>
+                <p style="padding-right: 10%; margin: 0px">Date</p>
+            </div>
+        </div>
+
+        <!-- Section 5 -->        
+        <div class="section4">
+            <h3 class="section4header">Section 5</h3>
+            <div style="display: flex; width: 80%; justify-content: space-between;">
+                <input type="text" name="HRMapproval" style="width: 60%;">
+                <input type="text" name="date2">
+            </div>
+            <div style="display: flex; width: 80%; justify-content: space-between;" >
+                <p style="width: 40%; margin: 0px; ">HRM Approval</p>
+                <p style="padding-right: 10%; margin: 0px">Date</p>
+            </div>
+            <p class="section5desc">
+                Forms will be reviewed for completeness and eligibility. You will be notified if any additional information is needed. Mail completed form to
+Human Resources, 250 Columbus Place or fax to (617) 373-7610. All waivers must be received by HRM within 30 days
+of the course start date.
+            </p>
+        </div>
+        <footer>
+            <hr class="hrtag">
+            <div class="footer" >
+                <h2 class="hrtxtb" >HR</h2>
+                <h2 class="navigatortxt">NAVIGATOR</h2>
+            </div>
+        </footer>
+        <div class="submit">
+            <button type="submit" value="submit" class="submitButton">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
